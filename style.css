@@ -142,3 +142,16 @@ footer {
     object-fit: cover;
     border-radius: 3px;
 }
+
+.docs-side-by-side {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.docs-side-by-side iframe {
+    flex: 1 1 48%; 
+    height: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
