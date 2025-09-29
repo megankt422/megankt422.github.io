@@ -1,22 +1,36 @@
-/* Reset browser defaults */
+/* ----------------------------
+   Reset browser defaults
+---------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General page styles */
+/* ----------------------------
+   Root colors
+---------------------------- */
+:root {
+    --primary-color: #780000;
+    --accent-color: #830c24;
+    --section-bg: #f5f5f5;
+    --body-bg: #fffafa;
+}
+
+/* ----------------------------
+   Body
+---------------------------- */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Garamond, serif;
     line-height: 1.6;
-    background: #f9f9f9;
-    color: #333;
-    max-width: 900px;
-    margin: auto;
+    background: var(--body-bg);
+    color: #000;
     padding: 20px;
 }
 
-/* Header */
+/* ----------------------------
+   Header
+---------------------------- */
 header {
     text-align: center;
     margin-bottom: 20px;
@@ -34,7 +48,9 @@ header p {
     margin-top: 10px;
 }
 
-/* Navigation */
+/* ----------------------------
+   Navigation
+---------------------------- */
 nav ul {
     display: flex;
     justify-content: center;
@@ -45,30 +61,53 @@ nav ul {
 }
 nav a {
     text-decoration: none;
-    color: #0077cc;
+    color: var(--accent-color);
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 nav a:hover {
-    background-color: #0077cc;
+    background-color: var(--primary-color);
     color: #fff;
 }
 
-/* Main content */
+/* ----------------------------
+   Main content
+---------------------------- */
 main {
     margin-top: 20px;
 }
+
+/* Full-width background for sections */
+.section-bg {
+    width: 100%;
+    background-color: var(--section-bg);
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+/* Centered text/content */
+.section-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section headings */
 h2 {
-    border-bottom: 2px solid #0077cc;
+    border-bottom: 2px solid var(--primary-color);
     margin-bottom: 10px;
     padding-bottom: 5px;
-    color: #0077cc;
+    color: var(--primary-color);
 }
-section, article {
+
+/* Articles inside sections */
+article {
     margin-bottom: 20px;
 }
+
+/* Lists */
 ul {
     margin-left: 20px;
     list-style: square;
@@ -76,14 +115,17 @@ ul {
 
 /* Links inside main content */
 main a {
-    color: #0077cc;
+    color: var(--primary-color);
     text-decoration: underline;
 }
 main a:hover {
-    color: #005599;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
-/* Footer */
+/* ----------------------------
+   Footer
+---------------------------- */
 footer {
     text-align: center;
     font-size: 0.9rem;
@@ -93,7 +135,9 @@ footer {
     border-top: 1px solid #ccc;
 }
 
-/* Responsive Design (for smaller screens like phones) */
+/* ----------------------------
+   Responsive Design
+---------------------------- */
 @media screen and (max-width: 600px) {
     body {
         padding: 10px;
@@ -101,8 +145,35 @@ footer {
     nav ul {
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
     .profile-pic {
         width: 120px;
     }
+    .section-content {
+        padding: 0 10px;
+    }
+}
+
+
+/* Objective section layout */
+.objective-content {
+    display: flex;
+    align-items: center; /* vertically centers content */
+    gap: 20px;           /* space between text and image */
+}
+
+.objective-text {
+    flex: 1;             /* left half (text) */
+}
+
+.objective-image {
+    flex: 1;             /* right half (image) */
+}
+
+.objective-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* ensures image fills the container without distortion */
+    border-radius: 8px;
 }
