@@ -15,29 +15,43 @@
 
 <body>
 
-    <header>  
-        <h1>MEGAN TAI</h1>
-    </header>
+    <header>
+        <nav class="navbar">
 
-    <nav>
-        <ul> 
-            <!--LINKS TO OTHER PAGES-->
+            <div class="logo">
+                <h1>MEGAN TAI</h1>
+            </div>
 
-            <li><a href="index.html">RESUME</a></li>
-            <li><a href="project1.html">TOKEN CLASSIFICATION</a></li>
-            <li><a href="project2.html">ETHICAL HACKING</a></li>
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="index.html">RESUME</a></li>
+                <li><a href="skills.html">PROFICIENCIES</a></li>
 
-        </ul>
-    </nav>
+                
+                <li class="dropdown">
+                    <a href="#">PROJECTS ▼</a>
+                    <ul class="dropdown-content">
+                        <a href="project1.html">TOKEN CLASSIFICATION PROJECT</a>
+                        <a href="project2.html">APPLIED HACKING AND BINARY ANALYSIS</a>
+                    </ul>
+                </li>
 
-    <header>  
+            </ul>
+        </nav>
+
+        <div class="divider"></div>
+
         <p> 
             <!--EMAIL AND LINKEDIN LINKS-->
             
-            <a href="mailto:me598759@ucf.edu">me598759@ucf.edu</a> | 
+            <a href="mailto:me598759@ucf.edu">me598759@ucf.edu</a>| 
+            
+            <a href="mailto:megantai422@gmail.com">megantai422@gmail.com</a>|
         
-            <a href="https://www.linkedin.com/in/megan-tai-b7321424b" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/megan-tai-b7321424b" target="_blank">LinkedIn</a>| 786-237-7533
         </p>
+        
     </header>
 
     <main>
@@ -46,13 +60,13 @@
             <div class="section-content objective-content">
                 
                 <div class="objective-text">
-                    <h2>OBJECTIVE</h2>
-                    <p style="text-indent: 30px;">Motivated Information Technology student with strong analytical and programming skills, seeking a data analysis internship or entry-level position. Eager to apply expertise in Python, SQL, and statistical tools to interpret data, support decision-making, and drive actionable insights in a dynamic, results-oriented environment.</p>
+                    <h2>MY RESUME</h2>
+                    <p>I am an Information Technology major at the University of Central Florida with minors in Economics and International Engineering and Computer Science.</p>
                 </div>
 
 
                 <div class="objective-image">
-                    <img src="images/myphoto.jpg" alt="Megan Tai profile picture">
+                    <img src="images/myphotoellipse.png" alt="Megan Tai profile picture">
                 </div>
 
             </div>
@@ -63,25 +77,92 @@
 
                 <h2>EDUCATION</h2>
 
-                    <h3>2022 - 2026 | University of Central Florida, Burnett Honors College</h3>
-                    <p>Bachelor of Information Technology; </p>
-                    <p>Minor in Economics; Minor in International Engineering & Computer Science</p>
-                    <p>GPA: 3.361</p>
+                <article>
 
-                    <br>
+                    <h3>2022 - 2026 | University of Central Florida, Burnett Honors College</h3>
+
+                    <ul> 
+
+                        <p>Bachelor of Information Technology; </p>
+                        <p>Minor in Economics; Minor in International Engineering & Computer Science</p>
+                        <p>GPA: 3.361</p>
+
+                    </ul>
+
+                </article>
+
+                <article>
 
                     <h3>Spring 2025 | University of Surrey | Study Abroad</h3>
-                    <p>Engineering Exchange Program; Computer Science Coursework</p>
-                    <p>GPA: 3.625 </p>
 
-                    <br>
+                    <ul> 
+
+                        <p>Engineering Exchange Program; Computer Science Coursework</p>
+                        <p>GPA: 3.625 </p>
+
+                    </ul>
+
+                </article>
+
+                <article> 
 
                     <h3>2018 - 2022 | Coral Reef Senior High School</h3>
-                    <p>Superintendent’s Diploma of Distinction</p>
-                    <p>GPA: 5.064</p>
+
+                    <ul> 
+
+                        <p>Superintendent’s Diploma of Distinction</p>
+                        <p>GPA: 5.064</p>
+
+                    </ul>
+
+                </article>
 
             </div>
         </section>
+
+        <section class="section-bg">
+            <div class="section-content">
+
+                <h2>RELEVANT EXPERIENCE</h2>
+
+                    <article>
+
+                        <h3>Technology Student Association: Architecture Design</h3>
+                        
+                        <ul>
+                            Finalist | November 2021 - February 2022
+
+                            <ul> 
+                                <li> Created architectural CAD plans and built a model cabin for Yellowstone National Park Rangers. </li>
+                                <li>Project was awarded as a Finalist in Regional TSA Competition.</li>
+
+                            </ul>
+
+                        </ul>
+
+                    </article>
+
+                    <article>
+
+                        <h3>Honors Congress Committee: Publications & Marketing</h3>
+                        
+                        <ul>
+                            Committee Member | Fall 2022 - Spring 2023
+
+                            <ul> 
+
+                                <li> Designed digital graphics and promotional materials for Honors College events and initiatives.</li>
+                                <li>Created monthly magazines highlighting member achievements, student works, and upcoming events.</li>
+                            
+                            </ul>
+
+                        </ul>
+
+                    </article>
+
+            </div>
+        </section>
+
 
         <section class="section-bg">
             <div class="section-content">
@@ -90,22 +171,55 @@
 
                     <article>
 
-                        <h3>Token Classification</h3>
+                        <h3>Airline Database Project</h3>
+
+                        <ul>
+                            Databases | Fall 2023
+
+                            <ul>
+                                <li>Designed a relational MySQL database to manage flights, passengers, and reservations for an airline system.</li>
+                                <li>Created ER diagrams, defined primary/foreign keys, and normalized tables to maintain data integrity.</li>
+                                <li>Wrote complex SQL queries (JOINs, subqueries, aggregate functions) for booking lookups and flight management.</li>
+                            </ul>
+
+                        </ul>
+
+
+                    </article>
+
+                    <article>
+
+                        <h3>Token Classification Project</h3>
                         
                         <ul>
-                            <li>Developed and trained token classification models to identify abbreviations and long forms in biomedical texts using the PLOD-CW-25 dataset.</li>
-                            <li>Applied data preprocessing, feature extraction, and evaluation metrics to optimize model accuracy and performance.</li>
+                            Natural Language Processing | Spring 2025
+
+                            <ul> 
+
+                                <li>Developed and trained token classification models to identify abbreviations and long forms in biomedical texts using the PLOD-CW-25 dataset.</li>
+                                <li>Applied data preprocessing, feature extraction, and evaluation metrics to optimize model accuracy and performance.</li>
+                           
+                            </ul>
+
                         </ul>
 
                     </article>
 
                     <article>
 
-                        <h3>Ethical Hacking</h3>
+                        <h3>Applied Hacking & Binary Analysis</h3>
                         
                         <ul>
-                            <li>Conducted hands-on cybersecurity exercises, including XSS, CSRF, and Shellshock attacks, in a controlled lab environment.</li>
-                            <li>Analyzed and mitigated security vulnerabilities, reinforcing understanding of network, web, and system security principles.</li>
+                            Ethical Hacking and Pentesting | Spring 2025
+
+                            <ul>
+
+                                <li>Performed hands-on XSS, CSRF, and Shellshock exploit exercises in controlled VMs to demonstrate client- and server-side vulnerabilities.</li>
+                                <li>Analyzed and mitigated security vulnerabilities, reinforcing understanding of network, web, and system security principles.</li>
+                                <li>Analyzed ELF binaries with readelf/objdump to inspect headers, sections, PLT/GOT, and dynamic symbol resolution.</li>
+                            
+                            </ul>
+
                         </ul>
 
                     </article>
@@ -122,7 +236,7 @@
 
                         <li>Certified in AutoCAD and Arduino</li>
                         <li>Certified in Adobe Photoshop and has experience with Adobe InDesign</li>
-                        <li>Experienced in Python, C, Java, and mySQL</li>
+                        <li>Experienced in Python, C, Java, and SQL, HTML, CSS, Javascript</li>
                         <li>Proficient in Microsoft Word, Powerpoint, Excel, Access</li>
 
                     </ul>
@@ -147,10 +261,38 @@
             </div>
         </section>
 
+        <section class="section-bg">
+            <div class="section-content">
+
+                <h2>VOLUNTEER WORK</h2>
+
+                    <article>
+
+                        <h3>Norma Butler Bossard Elementary School</h3>
+                        
+                        <ul>
+                            September 2018 - June 2019
+                        </ul>
+
+                    </article>
+
+                    <article>
+
+                        <h3>Miami-Dade County: Kendale Lakes Library</h3>
+                        
+                        <ul>
+                            August 2021 - October 2021
+                        </ul>
+
+                    </article>
+
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2025 MEGAN</p>
+        <p>&copy; 2025 MEGAN TAI</p>
     </footer>
 
 </body>
